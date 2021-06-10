@@ -79,21 +79,19 @@ const goodByes = ["Bye",
     "Have a good one",
     "Time to leave, stay in touch"]
 
-
+        //creates a random Integer
 function getRandom(array){
     const randomIndex = Math.floor(Math.random()*array.length);
     return randomIndex;
 }
-
+        //uses the random Integer created with getRandom() to return a element from the arrays containing phrases. Then prints them to the console.
 function composeMessage(){
     const randomGreeting = greetings[getRandom(greetings)];
     const randomFortunes = fortunes[getRandom(fortunes)];
     const randomGoodbyes = goodByes[getRandom(goodByes)];
 
     console.log(`${randomGreeting}\n\n${randomFortunes}.\n\n${randomGoodbyes}!`);
-    //console.log(randomFortunes);
-    //console.log(randomGoodbyes);
-}
+
 
 
 composeMessage();

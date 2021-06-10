@@ -92,6 +92,6 @@ function composeMessage(){
 
     console.log(`${randomGreeting}\n\n${randomFortunes}.\n\n${randomGoodbyes}!`);
 
-
+}
 
 composeMessage();
